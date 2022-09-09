@@ -1,5 +1,4 @@
 function populateDiv(jsonObj) {
-    var div = document.querySelector('div');
     var section = document.querySelector('section');
     var requestURL = 'https://raw.githubusercontent.com/SaRvj/test/main/data/teacher.json';
     var request = new XMLHttpRequest();
@@ -18,16 +17,15 @@ function populateDiv(jsonObj) {
         myH2.textContent = 'Teachers';
         myH2.className = 'teachers_title';
         section.appendChild(myH2);
-      
+
         var myPara = document.createElement('p');
         myPara.textContent = 'Meet Professional Trainers';
         myPara.className = 'teachers_text';
         section.appendChild(myPara);
     }
-    
-    
+
+
     function showTeachers(jsonObj) {
-        console.log(jsonObj);
         var person = JSON.parse(jsonObj);
         var myArticle = document.createElement('article');
         myArticle.className = 'teachers_section';
@@ -41,36 +39,41 @@ function populateDiv(jsonObj) {
         myDiv.className = 'teachers_div';
         var myList = document.createElement('ul');
         myList.className = 'teachers_icon';
-      
+
+        console.log(person.length);
+
         for (var i = 0; i < person.length; i++) {
-          
-      
-            myH3.textContent = person[i].name;
-            myPara1.textContent = person[i].description;
-            myImg.textContent = 'image: ' + person[i].image;
-            myDiv.textContent = 'socials:';
+            var newDiv = document.createElement('div');
+            newDiv.id = "teachers_wrapper";
+            document.body.appendChild(newDiv);
         
-            var socialsNet = person[i].socials;
-            for (var j = 0; j < socialsNet.length; j++) {
-                var listItem = document.createElement('li');
-                listItem.textContent = socialsNet[j];
-                myList.appendChild(listItem);
-            }
-      
+            var ids = ['id1', 'id2', 'id3'];
+            ids.forEach(function(e) {
+            document.body.innerHTML += `
+            <div class="teacher_div" id=${e}">
+                    <p></p>           
+                </div>
+            `
+})
+
+            myImg.src = 'image: ' + person[3].image;
+            console.log(person[i].image);
+            myH3.textContent = person[i].name;
+            console.log(person[i].name);
+            myPara1.textContent = person[i].description;
+            console.log(person[i].description);
+            
+            myArticle.appendChild(myImg);
             myArticle.appendChild(myH3);
             myArticle.appendChild(myPara1);
-            myArticle.appendChild(myImg);
-            myArticle.appendChild(myDiv);
             myArticle.appendChild(myList);
-        
-            section.appendChild(myArticle);
+
+
+            document.getElementById("teachers_bloc").appendChild(myArticle);
         }
+
     }
-    
+
 }
 
 populateDiv();
-
-
-
-
