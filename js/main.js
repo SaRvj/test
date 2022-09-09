@@ -12,19 +12,21 @@ function populateDiv(jsonObj) {
         showTeachers(teachers);
     }
 
-    function populateSection(jsonObj) {
+    function populateSection() {
         var myH2 = document.createElement('h2');
         myH2.textContent = 'Teachers';
-        myH2.className = 'teachers_title';
+        myH2.className = 'text';
         section.appendChild(myH2);
 
         var myPara = document.createElement('p');
         myPara.textContent = 'Meet Professional Trainers';
-        myPara.className = 'teachers_text';
+        myPara.className = 'text';
         section.appendChild(myPara);
+
     }
+    
 
-
+    // pour récupérer les données et afficher les teachers
     function showTeachers(jsonObj) {
         var person = JSON.parse(jsonObj);
         var myArticle = document.createElement('article');
@@ -47,16 +49,17 @@ function populateDiv(jsonObj) {
             newDiv.id = "teachers_wrapper";
             document.body.appendChild(newDiv);
         
+            // pour recréer chaque teacher
             var ids = ['id1', 'id2', 'id3'];
             ids.forEach(function(e) {
-            document.body.innerHTML += `
-            <div class="teacher_div" id=${e}">
+                document.body.innerHTML += `
+                <div class="teacher_div" id=${e}">
                     <p></p>           
                 </div>
-            `
-})
+                `
+            })
 
-            myImg.src = 'image: ' + person[3].image;
+            myImg.src = '../assets/images/' + person[i].image;
             console.log(person[i].image);
             myH3.textContent = person[i].name;
             console.log(person[i].name);

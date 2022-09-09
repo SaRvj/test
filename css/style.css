@@ -1,0 +1,221 @@
+.menu{
+    width: 100%;
+    height: 66px;
+    background: rgb(248, 246, 246);
+    line-height: 66px;
+}
+
+.left{
+    float: left;
+    display: flex;
+}
+
+.right{
+    float: right;
+}
+
+.logo{
+    margin: 0 50px 0 0;
+    padding: 0;
+    color: rgb(61, 59, 59);
+    font-weight: 500;
+    font-size: 2em;
+}
+
+header{
+    border-top-style: solid;
+    border-width: thick;
+    color: rgb(65, 188, 131);
+}
+
+.menuLink{
+    text-decoration: none;
+    color: rgb(61, 59, 59);
+    font-weight: normal;
+    padding: 0;
+    margin: 0 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuLinkRight{
+    text-decoration: none;
+    color: rgb(61, 59, 59);
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.colorLink:hover{
+    padding-bottom: 3px;
+    background-color: rgb(65, 188, 131);
+    color: ghostwhite;
+    border: solid 15px rgb(65, 188, 131);
+}
+
+
+.right i{
+    margin-right: 5px;
+    color: rgb(65, 188, 131);
+}
+
+.footer {
+    background-color: #171717;
+    padding: 15px 10px;
+    margin: auto;
+}
+
+.footer ul{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.footer_List{
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+}
+.footer_txt {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer_contact{
+    color: #b5b0b0;
+    margin-bottom: 8px;
+}
+
+.footer_adress{
+    color: #b5b0b0;
+    margin-bottom: 8px;
+}
+
+.hero-banner {
+    height: 40em;
+    position: relative;
+    background: url('../assets/images/slider-image2.jpg');
+    background-position: initial;
+    background-size: 93em;
+    width: 100%;
+}
+  
+.bannerImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+  
+.hero-banner-text {
+    position: absolute;
+    color: white;
+    width: 40em;
+    top: 10em;
+    left: 10em;
+}
+  
+.hero-banner-text span {
+    padding: 0;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.hero-banner-text p {
+    margin: 30px 0 6px 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 1.2;
+}
+  
+.hero-banner-btn {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+    border-color: white;
+    border-radius: 3.5em;
+    padding: 1em 2em;
+    width: 11em;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+}
+  
+.hero-banner-btn:hover {
+    background-color: rgb(65, 188, 131);
+}
+  
+.teachers_bloc{
+    display: flex;
+    margin-left: 65px;
+}
+
+
+.teachers_title{
+    color: rgb(36, 35, 35);
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin: 0;
+    padding: 85px 0 10px 0;
+}
+
+.teachers_text{
+    color: #8e8c8c;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 40px 0;
+}
+
+.text{
+    visibility: hidden;
+}
+
+.teachers_img{
+    width: 70%;
+    object-fit: cover;
+}
+
+.teachers_social_content{
+    display: flex;
+    gap: 10px 30px;
+    row-gap: 50px;
+    column-gap: 295px;
+    margin-left: 65px;
+}
+
+.teachers_social{
+    display: flex;
+}
+
+.fa, .fab{
+    padding: 0 15px 0 0;
+    font-display: flex;
+}
+
+.teachers_icon{
+    display: flex;
+}
+
+.teachers_name{
+    color: rgb(79, 76, 76);
+    justify-content: center;
+    font-size: 25px;
+    margin: 0;
+    padding: 0px 0px 0px 15px;
+}
+
+.teachers_description{
+    color: #8e8c8c;
+    justify-content: center;
+    font-size: 15px;
+    margin: 0;
+    padding: 5px 0px 0px 15px;
+}
+
+

@@ -12,18 +12,15 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/teachers.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/3d79397626.js" crossorigin="anonymous"></script>
 
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    <!--header-->
     <header role="header">
         <nav class="menu" role="navigation">
             <div class="inner">
@@ -43,6 +40,8 @@
             </div>
         </nav>
     </header>
+
+    <!--banière-->
     <section class="hero-banner">
         <div class="hero-banner-text">
             <span class="hero-banner-text-span">Start your journey with our practical courses</span>
@@ -50,12 +49,93 @@
             <button class="hero-banner-btn">Take a course</button>
         </div>
     </section>
-    <section class="teachers_bloc">
-        <h2 class="teachers_title">Teachers</h2>
-        <p class="teachers_text">Meet Professional Trainers</p>
+    <section class="teachers_content" id="teachers_content">
+        <div>
+            <h2 class="teachers_title">Teachers</h2>
+            <p class="teachers_text">Meet Professional Trainers</p>
+        </div>
+        <div class="teachers_bloc" id="teachers_bloc"></div>
+        
         <!-- injecter l'élément généré avec js ici  -->
+
+        <div class="teachers_social_content">
+            <div class="teachers_social">
+                <span class="teachers_icon">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="teachers_social">
+                <span class="teachers_icon">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="teachers_social">
+                <span class="teachers_icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="teachers_social">
+                <span class="teachers_icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    <i class='fab fa-behance'></i>
+                </span>
+            </div>
+        </div>
     </section>
-     
+    
+
+    <!--popular courses-->
+    <section class="courses_bloc">
+        <h2 class="courses_title">Popular Courses</h2>
+        <p class="courses_text">Upgrade your skills with newest courses</p>
+
+        <!-- <div class="courses">
+            <div class="courses_hour">
+                <img src="./assets/images/courses-image5.jpg" alt="homme et femme qui étudient" class="courses_image">
+                <span class="courses_content"><i class="fa fa-calendar" aria-hidden="true"></i>5/10/2018</span>
+                <span class="courses_content"><i class="fa fa-clock-o" aria-hidden="true"></i>10 Hours</span>
+            </div>
+
+            <div class="courses_hour">
+                <img src="./assets/images/courses-image1.jpg" alt="homme qui écrit" class="courses_image">
+                <span class="courses_content"><i class="fa fa-calendar" aria-hidden="true"></i>12/7/2018 </span>
+                <span class="courses_content"><i class="fa fa-clock-o" aria-hidden="true"></i>7 Hours </span>
+            </div>
+
+            <div class="courses_hour">
+                <img src="./assets/images/courses-image3.jpg" alt="homme qui étudie" class="courses_image">
+                <span class="courses_content"><i class="fa fa-calendar" aria-hidden="true"></i>20/7/2018 </span>
+                <span class="courses_content"><i class="fa fa-clock-o" aria-hidden="true"></i>4.5 Hours</span>
+            </div>
+        </div> -->
+        <div class="slider_container">
+            <div class="slider_content">
+                <div class="card_wrapper">
+                    <div class="card">
+                        <div class="image_content">
+                            <span class="overlay"></span>
+                            <div class="card_image">
+                                <img src="/assets/images/courses-image5.jpg" alt=""class="card_img">
+                            </div>
+                        </div>
+
+                        <div class="card_content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
     <!--footer-->
     <footer class="footer">
         <ul>
@@ -74,5 +154,8 @@
             </li>
         </ul>
     </footer>
+
+    <script type="module" src="./js/main.js"></script>
+
 </body>
 </html>
