@@ -1,0 +1,202 @@
+aside {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #3f51b5;
+    padding: 30px 0px;
+}
+
+aside .aside-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #3f51b5;
+    width: 100%;
+    padding: 20px;
+}
+
+.aside-picture img {
+    width: 90vw;
+}
+
+.aside-wrap .whole-form {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.whole-form h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.whole-form p {
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.whole-form form {
+    height: auto;
+}
+
+aside h3 {
+    color: white;
+    margin-bottom: 0px;
+}
+
+aside p {
+    color: white;
+}
+
+.aside-wrap .footer-paragraph {
+    color: white;
+    margin-bottom: 30px;
+}
+
+form .text-form {
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 15px;
+}
+
+form .email-form {
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 15px;
+}
+
+form input {
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #575757;
+    width: 100%;
+    color: white;
+    padding-bottom: 10px;
+}
+
+form textarea {
+    resize: none;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+form .submit-form {
+    height: 60px;
+    background-color: white;
+    border-radius: 30px;
+    color: #575757;
+    cursor: pointer;
+    line-height: 60px;
+}
+
+
+@media screen and (min-width: 768px){
+    aside {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-color: #3f51b5;
+        padding: 30px 0px;
+    }
+
+    aside .aside-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #3f51b5;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .aside-picture img {
+        max-width: 992px;
+    }
+
+    .aside-wrap .whole-form {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: auto;
+        align-items: flex-start;
+    }
+
+    .whole-form form {
+        flex: 1;
+    }
+
+    form .text-form, .email-form {
+        padding-top: 0px;
+    }
+
+    form .text-form, .email-form {
+        padding-top: 0px;
+    }
+
+    form input {
+        height: 45px;
+        padding: 5px;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+
+    form .submit-form {
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .aside-picture img {
+        width: 40vw;
+        height: 35vw;
+    }
+
+    .aside-wrap .whole-form {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: flex-start;
+        padding-right: 45px;
+    }
+
+    aside h3 {
+        margin-top: 0px;
+    }
+
+    aside .aside-wrap {
+        flex-direction: row;
+        width: 80vw;
+        justify-content: center;
+        margin: auto;
+        padding: 0px;
+        padding-top: 30px;
+    }
+
+    .whole-form form {
+        text-align: start;
+    }
+
+    form input {
+        font-size: 0.9em;
+    }
+    form .submit-form {
+        width: 50%;
+        line-height: 50px;
+    }
+}
