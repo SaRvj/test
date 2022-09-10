@@ -12,6 +12,12 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/teachers.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/slider.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -20,7 +26,7 @@
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-    <!--header-->
+    <!-- header -->
     <header role="header">
         <nav class="menu" role="navigation">
             <div class="inner">
@@ -40,6 +46,20 @@
             </div>
         </nav>
     </header>
+    <!-- <nav>
+        <div class="logo">Known</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </nav> -->
 
     <!--banière-->
     <section class="hero-banner">
@@ -91,9 +111,9 @@
     
 
     <!--popular courses-->
-    <section class="courses_bloc">
+    <!-- <section class="courses_bloc">
         <h2 class="courses_title">Popular Courses</h2>
-        <p class="courses_text">Upgrade your skills with newest courses</p>
+        <p class="courses_text">Upgrade your skills with newest courses</p> -->
 
         <!-- <div class="courses">
             <div class="courses_hour">
@@ -114,7 +134,10 @@
                 <span class="courses_content"><i class="fa fa-clock-o" aria-hidden="true"></i>4.5 Hours</span>
             </div>
         </div> -->
-        <div class="slider_container">
+
+
+        
+        <!-- <div class="slider_container">
             <div class="slider_content">
                 <div class="card_wrapper">
                     <div class="card">
@@ -131,10 +154,92 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+
+    <!-- </section> --> 
+    <div class="courses-container" id="courses">
+        <h3>Popular Courses</h3>
+        <p class="main-paragprah">Upgrade your skills with newest courses</p>
+        <div class="courses-container-items">  
+            <div class="one-course">
+                <div class="course-pictures"> 
+                    <img class="course-1" src="./assets/images/courses-image5.jpg" alt="">
+                    <div class="calendar-container">
+                        <a class="fa fa-calendar"></a>
+                        <p class="numbers">8 / 10 / 2019</p>
+                        <a class="fa fa-clock-o"></a>
+                        <p class="numbers">6 hours</p>
+                    </div>
+                </div>
+                <h4>Business & Managment</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="select-teacher">
+                    <img class="teacher-1" src="./assets/images/author-image2.jpg" alt="">
+                    <p>Jessica</p>
+                    <div class="teacher-price">Free</div> 
+                </div>
+            </div>
         </div>
+        <div class="courses-container-items">  
+            <div class="one-course">
+                <div class="course-pictures"> 
+                    <img class="course-1" src="./assets/images/courses-image1.jpg" alt="">
+                    <div class="calendar-container">
+                        <a class="fa fa-calendar"></a>
+                        <p class="numbers">8 / 10 / 2019</p>
+                        <a class="fa fa-clock-o"></a>
+                        <p class="numbers">6 hours</p>
+                    </div>
+                </div>
+                <h4>Business & Managment</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="select-teacher">
+                    <img class="teacher-1" src="./assets/images/author-image1.jpg" alt="">
+                    <p>Jessica</p>
+                    <div class="teacher-price">Free</div> 
+                </div>
+            </div>
+        </div>
+        <div class="courses-container-items">  
+            <div class="one-course">
+                <div class="course-pictures"> 
+                    <img class="course-1" src="./assets/images/courses-image2.jpg" alt="">
+                    <div class="calendar-container">
+                        <a class="fa fa-calendar"></a>
+                        <p class="numbers">8 / 10 / 2019</p>
+                        <a class="fa fa-clock-o"></a>
+                        <p class="numbers">6 hours</p>
+                    </div>
+                </div>
+                <h4>Business & Managment</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="select-teacher">
+                    <img class="teacher-1" src="./assets/images/author-image2.jpg" alt="">
+                    <p>Jessica</p>
+                    <div class="teacher-price">Free</div> 
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </section>
-
+    <!--formulaire de contact-->
+    <aside>
+        <div class="aside-wrap">
+            <div class="whole-form">
+                <h3>Contact us</h3>
+                <p class="footer-paragraph">we love conversation. let us talk!</p>
+                <form action="" method="">
+                    <input class="text-form" type="text" name="userName" placeholder="Enter full Name" id="user-name"/>
+                    <input class="email-form" type="email" name="email" placeholder="Enter email adress" id="email"/>
+                    <textarea cols="60" rows="10" name="message" placeholder="Tell us about your message" id="message"></textarea>
+                    <input class="submit-form" type="submit" value="Send Message"/>
+                </form>
+            </div>
+            <div class="aside-picture">
+                <img src="./assets/images/contact-image.jpg" alt="deux femme sur un bureau">
+            </div>
+        </div>
+    </aside>
 
     <!--footer-->
     <footer class="footer">

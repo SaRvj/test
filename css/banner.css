@@ -3,8 +3,9 @@
     position: relative;
     background: url('../assets/images/slider-image2.jpg');
     background-position: initial;
-    background-size: 93em;
+    background-size: 100%;
     width: 100%;
+    margin-top: -20px;
 }
   
 .bannerImg {
