@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* max width:600px */
+
+@media only screen and (max-width:600px) {
+   .container {
+       width: 100%;
+   } 
+   header {
+    display: none;
+    }
+    .hero-heading {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 0%;
+        padding-left: 15px;
+    }
+    .hero-heading h1 {
+        /* font-size: 2.5rem; */
+        padding-bottom: 2.3rem;
+        /* padding: 0; */
+        font-size: 3em;
+        font-weight: 500;
+    }
+    .hero-heading p {
+        color: ghostwhite;
+        padding-bottom: 2rem;
+        line-height: 25px;
+        font-size: 0.9rem;
+    }
+   section {
+       padding: 3rem 0rem;
+   }
+   .about .container {
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .signup .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .signup .container .signup-info h2 {
+        padding-bottom: 2.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .signup .signup-form {
+        background-color: var(--solid);
+        text-align: center;
+        color: ghostwhite;
+        font-family: var(--regular);
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        margin-left: 0px;
+    }
+    .signup .signup-form .form-heading {
+    padding: 1rem 0rem;
+    font-size: 1rem;
+    }
+    .signup .signup-form form {
+        padding: 0px 30px;
+    }
+    .signup .signup-form form input[type='submit'] {
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    width: 120px;
+   
+    }
+    .teacher .container {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .section-heading p {
+        padding-bottom: 3rem;
+    }
+    .section-heading h2 {
+        padding-bottom: 5px;
+        color: rgb(36, 35, 35);
+        font-size: 35px;
+    }
+    .teacher .container .teacher-container hr {
+        margin-bottom: 0.5rem;
+    }
+    .teacher-id {
+        margin-bottom: 3rem;
+    }
+    .section-heading h2 {
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+    }
+    .course .container {
+    grid-template-columns: repeat(1,1fr);
+      
+    }
+    .reviews .container {
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .reviews .container .reviews-text {
+        padding-bottom: 3rem;
+    }
+    .reviews .container .student .student-info h2 {
+        font-size: 1.1rem;
+    }
+    .student .student-info p{
+        font-size: 0.9rem;
+    }
+    .contact .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact .container .contact-form .contact-heading p {
+        font-size: 0.9rem;
+    }
+    .contact .container .contact-form .contact-heading h2 {
+        font-size: 1.5rem;
+    }
+    .contact .container .contact-form {
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .contact .contact-img-container img {
+        padding: 0px;
+        
+    }
+    
+    .contact .contact-form form input[type='submit'] {
+         width: 120px;
+         padding: 10px;
+         font-size: 0.9rem;
+    }
+    .contact-form form input[type='email'], textarea {
+        padding: 10px 20px;
+    }
+    .contact .contact-img-container img {
+        padding-left: 0px;
+    }
+    .footer .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 45px;
+       
+    }
+    .footer .container .heading h2 {
+        padding-bottom: 1rem;
+    }
+    .footer .container p {
+        padding-bottom: 1rem;
+    }
+    .footer .headquarter .head-social ul li a {
+        margin-bottom: 1rem;
+    }
+    .quick-links {
+        margin: 45px 0px 25px 0px;
+    }
+    .quick-links ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .news-signup form input[type='submit'] {
+    width: 120px;
+    padding: 10px;
+    font-size: 0.9rem;
+    }
+
+}
+
+/* max-width: 767px */
+
+@media only screen and (min-width:601px) and (max-width:767px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0px 15px;
+    }
+    header {
+        display: none;
+    }
+    .hero-heading {
+        width: 90%;
+    }
+    .about .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .signup .container{
+        flex-direction: column;
+    }
+    .signup .container .signup-info h2 {
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+    .signup .signup-form {
+        background-color: var(--solid);
+        text-align: center;
+        color: ghostwhite;
+        font-family: var(--regular);
+        border-radius: 50%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .signup .signup-form form {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 50px;
+        width: 400px;
+        height: 300px;
+    
+    }
+    .signup .signup-form .form-heading {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        margin: 45px 0px 10px 0px;
+        padding: 0px;
+    }
+    .teacher .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .course .container {
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .reviews .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 75px;
+    }
+    .contact .container {
+        flex-direction: column;
+    }
+    .contact .container .contact-form {
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .contact .contact-img-container img {
+        padding: 0px;
+        
+    }
+    .footer .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 45px;
+       
+    }
+    .footer .container .heading h2 {
+        padding-bottom: 1rem;
+    }
+    .footer .container p {
+        padding-bottom: 1rem;
+    }
+    .footer .headquarter .head-social ul li a {
+        margin-bottom: 1rem;
+    }
+    .quick-links {
+        margin: 45px 0px 25px 0px;
+    }
+    .quick-links ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+/*------------------------
+    max-width: 967px
+-------------------------------*/
+
+@media only screen and (min-width:768px) and (max-width:967px) {
+    .container {
+        max-width: 992px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+    header {
+        display: none;
+    }
+    .hero-heading {
+        width: 80%;
+    }
+    .signup .container{
+        flex-direction: column;
+    }
+    .signup .container .signup-info h2 {
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+    .signup .signup-form {
+        background-color: var(--solid);
+        text-align: center;
+        color: ghostwhite;
+        font-family: var(--regular);
+        border-radius: 50%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .signup .signup-form form {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 50px;
+        width: 400px;
+        height: 300px;
+    
+    }
+    .signup .signup-form .form-heading {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        margin: 45px 0px 10px 0px;
+        padding: 0px;
+    }
+
+    .teacher .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+}
+
+
+
+
+@media only screen and (min-width:992px)  {
+    .container {
+        max-width: 1145px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
