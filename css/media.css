@@ -484,6 +484,9 @@
     }
 }
 
+/*------------------------
+    max width:1080px
+-------------------------------*/
 @media only screen and (max-width:1080px) {
     .teachers_social_content {
         display: flex;
@@ -529,7 +532,9 @@
     }
 }
 
-
+/*------------------------
+    max width:375px
+-------------------------------*/
 @media only screen and (max-width:375px) {
     .teachers_social_content {
         display: flex;
@@ -554,6 +559,108 @@
         font-size: 8px;
         margin: 0;
         padding: 5px 0px 0px 5px;
+    }
+}
+
+/*------------------------
+    min width:768px
+-------------------------------*/
+@media screen and (min-width: 768px){
+    aside {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-color: #3f51b5;
+        padding: 30px 0px;
+    }
+
+    aside .aside-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #3f51b5;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .aside-picture img {
+        max-width: 992px;
+    }
+
+    .aside-wrap .whole-form {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: auto;
+        align-items: flex-start;
+    }
+
+    .whole-form form {
+        flex: 1;
+    }
+
+    form .text-form, .email-form {
+        padding-top: 0px;
+    }
+
+    form .text-form, .email-form {
+        padding-top: 0px;
+    }
+
+    form input {
+        height: 45px;
+        padding: 5px;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+
+    form .submit-form {
+        line-height: 40px;
+    }
+}
+
+/*------------------------
+    min width:992px
+-------------------------------*/
+@media screen and (min-width: 992px){
+    .aside-picture img {
+        width: 40vw;
+        height: 35vw;
+    }
+
+    .aside-wrap .whole-form {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: flex-start;
+        padding-right: 45px;
+    }
+
+    aside h3 {
+        margin-top: 0px;
+    }
+
+    aside .aside-wrap {
+        flex-direction: row;
+        width: 80vw;
+        justify-content: center;
+        margin: auto;
+        padding: 0px;
+        padding-top: 30px;
+    }
+
+    .whole-form form {
+        text-align: start;
+    }
+
+    form input {
+        font-size: 0.9em;
+    }
+    form .submit-form {
+        width: 50%;
+        line-height: 50px;
     }
 }
 

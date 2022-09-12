@@ -24,7 +24,7 @@
 --grey: rgb(79, 76, 76);
 --white: ghostwhite;
 --offwhite: #D5D5D5;
---black:rgb(36, 35, 35);
+--dark:rgb(36, 35, 35);
     
 
 /* ------------------------
@@ -248,7 +248,6 @@ header .nav {
     color: ghostwhite;
     font-size: 2.5rem;
     padding-bottom: 2.3rem;
-    width: 115%;
 }
 .hero-heading p {
     color: ghostwhite;
@@ -468,12 +467,12 @@ header .nav {
   
 .previous {
     background-color: rgb(169, 164, 164);
-    color: white;
+    color: var(--white);
 }
   
 .next {
     background-color: rgb(169, 164, 164);
-    color: white;
+    color: var(--white);
 }
   
 .square {
@@ -589,92 +588,39 @@ form .submit-form {
     line-height: 60px;
 }
 
-
 /* ------------------------
     footer 
 ------------------------------- */
-
 .footer {
-    background: #171717;
-    color: white;
+    background-color: #171717;
+    padding: 15px 10px;
+    margin: auto;
 }
-.footer .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
+
+.footer ul{
+    display: flex;
+    justify-content:flex-start;
 }
-.footer .container p {
-    color: #b5b0b0;
-}
-.footer .container .heading h2 {
-    font-size: 1.4rem;
-    padding-bottom: 2rem;
-}
-.footer .container p {
-    font-size: 0.9rem;
-    padding-bottom: 1.4rem;
-}
-.footer .headquarter address p {
-    text-transform: capitalize;
-    font-style: normal;
-}
-.footer .container ul li a {
-    color: #b5b0b0;
-    font-size: 0.9rem;
-}
-.footer .headquarter .head-social ul li a {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 50%;
-    line-height: 30px;
-    color: var(--primary);
-    margin-bottom: 2rem;
-}
-.footer .headquarter .head-social ul li a:hover {
-    background-color: var(--primary);
-    color: #b5b0b0;
-}
-.footer .container .contact-in .call-email p:first-child {
-    padding-bottom: 0.4rem;
-}
-.quick-links .links ul li a {
-    margin-right: 2rem;
-    line-height: 25px;
-    color: var(--dark);
-    font-family: var(--regular);
-}
-.quick-links .links ul li a:hover {
-    color: var(--primary);
-}
-.footer .news-signup form {
+
+.footer_List{
     display: flex;
     flex-direction: column;
+    padding: 80px;
 }
-.footer .news-signup form input[type='email'] {
-    padding: 15px;
-    margin: 10px 0px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    border-bottom: 1px solid var(--dark);
-    
+.footer_txt {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 15px;
 }
-.footer .news-signup form input[type='email']:focus {
-    border-bottom: 1px solid var(--seconday);
-}
-.footer .news-signup form input[type='submit'] {
-    width: 200px;
-    background-color: transparent;
-    border: 1px solid var(--pure);
-    margin: 2rem 0rem;
-}
-.footer .news-signup form input[type='submit']:hover {
-    background-color: var(--seconday);
-    color: var(--pure);
-    border: 1px solid transparent;
 
+.footer_contact{
+    color: #b5b0b0;
+    margin-bottom: 8px;
 }
-.footer .news-signup form p {
-    font-size: 0.8rem;
+
+.footer_adress{
+    color: #b5b0b0;
+    margin-bottom: 8px;
 }
